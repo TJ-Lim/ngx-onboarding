@@ -4,7 +4,7 @@
     <div class="onboarding-header script-font" *ngIf="onboardingService.isEnabled() && visibleItem">
         <mat-icon *ngIf="matIconName && !svgIcon && !fontSet">{{matIconName}}</mat-icon>
         <mat-icon *ngIf="svgIcon || fontSet" [svgIcon]="svgIcon" [fontSet]="fontSet" [fontIcon]="fontIcon"></mat-icon>
-        {{'ONBOARDING' |translate|uppercase}}
+        {{'USER GUIDE' |translate|uppercase}}
     </div>
     <div class="onboarding-shadow"
          [ngStyle]="getPositionStyle(visibleItem.element)"></div>
